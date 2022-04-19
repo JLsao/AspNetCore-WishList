@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace WishList.Models
 {
@@ -13,6 +14,10 @@ namespace WishList.Models
           get;
           set; 
         }
-            
+
+        internal void Add(object items)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
